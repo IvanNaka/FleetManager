@@ -11,6 +11,12 @@ namespace FleetManager.Domain.Entities
     {
         public Guid Id;
         public readonly string Serie;
-        public readonly int Number;
+        public readonly uint Number;
+
+        public Chassi(string serie, uint number)
+        {
+            Serie = serie;
+            Number = number;
+        }
     }
 }

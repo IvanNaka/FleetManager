@@ -11,7 +11,7 @@ namespace FleetManager.Domain.Repositories
     {
         Task AddAsync(Vehicle vehicle);
         Task UpdateAsync(Vehicle vehicle);
-        Task<Vehicle> GetByChassisIdAsync(Chassi chassisId);
+        Task<Vehicle?> GetByChassisIdAsync(Chassi chassi);
         Task<IEnumerable<Vehicle>> GetAllAsync();
     }
 }

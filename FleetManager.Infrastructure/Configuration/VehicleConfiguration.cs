@@ -15,7 +15,7 @@ namespace FleetManager.Infrastructure.Configuration
         {
             base.Configure(builder);
 
-            builder.HasNoKey();
+            builder.HasKey(v => v.Id);
             builder.ToTable("Vehicle");
             builder.Property(v => v.ChassiId).HasColumnType("uniqueidentifier").HasColumnName("ChassisId").IsRequired();
             builder.Property(v => v.Color).HasColumnName("Color").HasMaxLength(50).IsRequired();

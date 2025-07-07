@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FleetManager.Application.DTO.Input
+namespace FleetManager.Application.DTO
 {
-    internal class CreateVehicleDto
+    public class UpdateVehicleColorDto
     {
+        public string NewColor { get; set; }
     }
 }

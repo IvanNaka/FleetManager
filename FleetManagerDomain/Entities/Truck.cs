@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FleetManager.Domain.Entities
 {
-    internal class Truck : Vehicle
+    public class Truck : Vehicle
     {
         public override string Type => "Truck";
         public override int NumberOfPassengers => 1;
@@ -14,7 +14,7 @@ namespace FleetManager.Domain.Entities
         // Implementing the missing ChassiId property
         public override Guid ChassiId => Chassi?.Id ?? Guid.Empty;
 
-        public Truck(Chassi chassisId, string color) : base(chassisId, color)
+        public Truck(Chassi chassisId, string color) : base(chassisId, color, "Truck")
         {
         }
     }

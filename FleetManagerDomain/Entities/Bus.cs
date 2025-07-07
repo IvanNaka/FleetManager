@@ -11,7 +11,7 @@ namespace FleetManager.Domain.Entities
         public override string Type => "Bus";
         public override int NumberOfPassengers => 42;
         public override Guid ChassiId => Chassi?.Id ?? Guid.Empty;
-        public Bus(Chassi chassisId, string color) : base(chassisId, color)
+        public Bus(Chassi chassisId, string color) : base(chassisId, color, "Bus")
         {
 
         }

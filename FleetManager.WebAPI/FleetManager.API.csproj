@@ -16,10 +16,11 @@
     </PackageReference>
     <PackageReference Include="Microsoft.Identity.Web" Version="3.10.0" />
     <PackageReference Include="Microsoft.Identity.Web.DownstreamApi" Version="3.10.0" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.1" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\FleetManager.Application\FleetManager.Application.csproj" />
     <ProjectReference Include="..\FleetManager.Infrastructure\FleetManager.Infrastructure.csproj" />
   </ItemGroup>
 

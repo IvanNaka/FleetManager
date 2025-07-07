@@ -8,9 +8,10 @@ namespace FleetManager.Domain.Entities
 {
     public abstract class BaseEntity
     {
-        public DateTime CreationDate { get; set; }
+        public DateTime CreationDate { get; set; } =  DateTime.UtcNow;
         public DateTime? LastUpdate { get; set; }
         public bool? Active { get; private set; } = true;
+        public string UserId { get; set; }
         public virtual void Activate()
             => Active = true;
 

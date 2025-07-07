@@ -16,6 +16,7 @@ namespace FleetManager.Infrastructure
         {
         }
         public DbSet<Vehicle> Vehicles { get; set; }
+        public DbSet<Chassi> Chassis { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
